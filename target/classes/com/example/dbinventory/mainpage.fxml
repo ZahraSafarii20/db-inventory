@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dbinventory.MainPageController">
+    <children>
+        <TextField fx:id="searchTxt" layoutX="170.0" layoutY="24.0" prefHeight="26.0" prefWidth="403.0" promptText="search " />
+        <MenuButton fx:id="menuBtn" layoutX="28.0" layoutY="25.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="117.0" text="Products Menu">
+            <items>
+                <MenuItem fx:id="allBtn" mnemonicParsing="false" onAction="#clickOnAllButton" text="All" />
+                <MenuItem fx:id="jewelleryBtn" mnemonicParsing="false" onAction="#clickOnJewelleryButton" text="Jewellery" />
+                <MenuItem fx:id="makeupBtn" mnemonicParsing="false" onAction="#clickOnMakeupButton" text="Makeup" />
+                <MenuItem fx:id="clothesBtn" mnemonicParsing="false" onAction="#clickOnClothesButton" text="Clothes" />
+            </items>
+        </MenuButton>
+        <ListView fx:id="productsList" layoutX="170.0" layoutY="92.0" prefHeight="370.0" prefWidth="470.0" />
+        <Button fx:id="searchBtn" layoutX="588.0" layoutY="25.0" mnemonicParsing="false" onAction="#clickOnSearchButton" text="Search" />
+    </children>
+</AnchorPane>
