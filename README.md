@@ -32,4 +32,6 @@ Ensure MongoDB is running on `localhost:27017` with a database named `Inventory`
 
 ## Authors
 
-- Your Name
+- Zahra Safari
+- Mina Alipour
+- Ghazal Firoozi
